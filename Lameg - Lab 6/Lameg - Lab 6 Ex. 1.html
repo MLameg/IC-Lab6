@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Lab 6 </title>
+		
+		<style>
+			div {
+					padding: .5em;
+				}
+		</style>
+	</head>
+	
+	<body>
+		<h4>Please complete this form to submit your feedback:</h4>
+		<form method = "post" action = "http://localhost/Lameg - Lab 6 Ex. 1.php">
+		<div>
+		<label>Name:</label>
+			<select name = "Title">
+				<option selected>Dr.</option>
+				<option>Mr.</option>
+				<option>Mrs.</option>
+				<option>Ms.</option>
+			</select>
+			<input name = "name" type = "text" size = "25" required><br>
+		</div>
+
+		<div>
+		<label>Email Address:</label>
+			<input name = "usremail" type = "email" size = "25" required><br>
+		</div>
+		
+		<div>
+		<label>Phone Number:</label>
+			<input name = "usrnum" type = "tel" size = "25" ><br>
+		</div>
+		
+		<div>
+		<label>Response: This is...</label>
+			<input name = "response" type = "radio" value = "excellent"> 
+				<label>Excellent</label>			
+			<input name = "response" type = "radio" value = "Ok">
+				<label>Ok</label>
+			<input name = "response" type = "radio" value = "Boring"> 
+				<label>Boring</label><br>
+		</div>				
+
+		<div>
+		<label>Comments:</label>
+			<textarea name = "comments" 
+				rows = "4" cols = "36">Enter comments here.
+			</textarea><br>
+		</div>
+				
+		<input type = "submit" value = "Send My Feedback">
+
+		</form>
+		
+	</body>
+</html>

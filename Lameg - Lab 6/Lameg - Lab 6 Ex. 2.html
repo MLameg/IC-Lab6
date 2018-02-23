@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Lab 6 </title>
+		
+		<style>
+			div {
+					padding: .5em;
+				}
+		</style>
+	</head>
+	
+	<body>
+		<h4>Fill out this form to calculate the total cost:</h4>
+		<form method = "post" action = "http://localhost/Lameg - Lab 6 Ex. 2.php">
+		
+			<div>
+			<label>Price:</label>
+				<input name = "price" type = "number" required><br>
+			</div>
+
+			<div>
+			<label>Quantity:</label>
+				<input name = "quantity" type = "number" required><br>
+			</div>
+		
+			<div>
+			<label>Discount:</label>
+				<input name = "discount" type = "number"><br>
+			</div>
+			
+			<div>
+			<label>Tax:</label>
+				<input name = "tax" type = "number" required><label>%</label><br>
+			</div>
+			
+			<div>
+			<label>Shipping method:</label>
+				<select name = "ship">
+					<option selected value = "5.00">Slow and steady...</option>
+					<option value = "9.95">Put a move on it.</option>
+					<option value = "19.95">I need it yesterday!</option>
+				</select><br>
+			</div>
+			
+			<div>
+			<label>Number of payments to make:</label>
+				<input name = "payments" type = "number" required><br>
+			</div>
+		
+			<input type = "submit" value = "Calculate!">
+
+		</form>
+		
+	</body>
+</html>
